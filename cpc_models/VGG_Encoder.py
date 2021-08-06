@@ -1,12 +1,3 @@
-# Based On:
-# https://github.com/kuangliu/pytorch-cifar/blob/master/models/preact_resnet.py
-# For CPC Encoder the fourth residual layer is removed
-
-'''Pre-activation ResNet in PyTorch.
-Reference:
-[1] Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-    Identity Mappings in Deep Residual Networks. arXiv:1603.05027
-'''
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
