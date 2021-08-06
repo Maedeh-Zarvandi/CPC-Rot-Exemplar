@@ -56,7 +56,7 @@ class CPC(nn.Module):
             if i > 0:
                 self.encodings = self.encodings.transpose(2,3).flip(3)
 
-            # Find all context vectors
+            # all context vectors
             self.contexts = self.ar(self.encodings) # (batch_size, encoding_size, grid_size, grid_size)
 
             # Find contrastive loss
