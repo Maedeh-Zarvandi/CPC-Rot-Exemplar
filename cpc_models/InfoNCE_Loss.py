@@ -6,10 +6,6 @@ import torch.nn.functional as F
 class InfoNCE_Loss(nn.Module):
     """Performs predictions and InfoNCE Loss
 
-    Modified From:
-    https://github.com/loeweX/Greedy_InfoMax/blob/master/GreedyInfoMax/vision/models/InfoNCE_Loss.py
-    https://github.com/loeweX/Greedy_InfoMax/blob/master/LICENSE
-
     Args:
         pred_steps (int): number of steps into the future to perform predictions
         neg_samples (int): number of negative samples to be used for contrastive loss
