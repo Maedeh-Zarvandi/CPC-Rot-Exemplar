@@ -1,6 +1,3 @@
-'''
-Modified from https://github.com/pytorch/vision.git
-'''
 import math
 
 import torch.nn as nn
