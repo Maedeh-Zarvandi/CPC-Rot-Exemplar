@@ -1,0 +1,12 @@
+# Extensions to ignore
+*.npy
+
+# Directories to ignore
+*__pycache__/
+_hidden/
+data/stl10/
+data/cifar10/
+data/cifar100/
+
+# Files to ignore
+m3.bat
