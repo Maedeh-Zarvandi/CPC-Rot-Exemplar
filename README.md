@@ -5,11 +5,14 @@ A. v. d. Oord, Y. Li, and O. Vinyals, [Representation learning with contrastive 
 
 O. J. H ́enaff, A. Srinivas, J. D. Fauw, A. Razavi, C. Doersch, S. M. A. Eslami, and A. van den Oord [Data-Efficient Image Recognition with Contrastive Predictive Coding](https://arxiv.org/abs/1905.09272)
 
-## Dependencies
+Also there is VGG16 added as encoder. Rotation Prediction from [UNSUPERVISED REPRESENTATION LEARNING BY PRE- DICTING IMAGE ROTATIONS](https://arxiv.org/pdf/1803.07728.pdf) and Exemplar from [Exemplar VAE: Linking Generative Models, Nearest Neighbor Retrieval, and Data Augmentation](https://arxiv.org/abs/2004.04795) are added:
+
+
+<!-- ## Dependencies
 * PyTorch (verified with version 1.6.0)
 * tqdm
 * numpy
-* opencv-python (patch aug visualistaion only - not training CPC)
+* opencv-python (patch aug visualistaion only - not training CPC) -->
 
 Included is environment.yml 
 
