@@ -69,7 +69,7 @@ def train():
             )
         )
 
-        # Save net at every 100th epoch
+        # Save net at every 100 epoch
         if epoch % 50 == 0 and epoch != args.trained_epochs+args.epochs:
             save(net, epoch)
 
@@ -103,7 +103,7 @@ if __name__ == "__main__":
     encoder_path = os.path.join("TrainedModels", args.dataset, "trained_encoder")
     colour = "_colour" if (not args.gray) else ""
 
-    # Define Encoder Network
+    # Define Encoder 
     if args.encoder[:6] == "resnet":
         enc = PreActResNetN_Encoder(args, use_classifier=False)
     elif args.encoder[:10] == "wideresnet":
@@ -138,7 +138,6 @@ if __name__ == "__main__":
 
     optimizer = optim.Adam(filter(lambda p: p.requires_grad, net.parameters()), lr=args.lr)
 
-    # Get selected dataset
     if args.dataset == "stl10":
         unsupervised_loader, _, _ = get_stl10_dataloader(args)
     elif args.dataset == "cifar10":
@@ -146,7 +145,7 @@ if __name__ == "__main__":
     elif args.dataset == "cifar100":
         unsupervised_loader, _, _ = get_cifar100_dataloader(args)
 
-    # Train the network
+    # Train
     print(f"Dataset: {args.dataset}, Encoder: {args.encoder}, Colour: {not args.gray}, Crop: {args.crop}, Grid Size: {args.grid_size}, Norm: {args.norm}, Pred Directions: {args.pred_directions}, Patch Aug: {args.patch_aug}")
     try:
         train()
