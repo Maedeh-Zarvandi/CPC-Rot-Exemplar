@@ -183,7 +183,6 @@ if __name__ == "__main__":
         for i in range(0, len(milestones)): 
             milestones[i] = int(milestones[i]) 
         scheduler = optim.lr_scheduler.MultiStepLR(optimizer, milestones=milestones, gamma=args.lr_gamma)
-
     loss_function = nn.CrossEntropyLoss()
 
     try:
